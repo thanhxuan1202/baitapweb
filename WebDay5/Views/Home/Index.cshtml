@@ -1,0 +1,59 @@
+﻿@model List<WebDay5.Models.EmployeeModel>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<h2 style="text-align: center;">Danh sách nhân viên</h2>
+
+<table style="width: 80%; margin: 0 auto; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="border: 1px solid #ddd; padding: 8px;">ID</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Họ tên</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Giới tính</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Số điện thoại</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Email</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Lương</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Trạng thái</th>
+            <th style="border: 1px solid #ddd; padding: 8px;">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Id</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.FullName</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Gender</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Phone</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Email</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Salary</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">@employee.Status</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">
+                    <a href="/Home/Edit/@employee.Id" class="btn">Sửa</a>
+                    <a href="/Home/Delete/@employee.Id" class="btn" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/Home/Create" class="btn">Thêm nhân viên</a>
+</div>
+
+<style>
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        border-radius: 5px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>

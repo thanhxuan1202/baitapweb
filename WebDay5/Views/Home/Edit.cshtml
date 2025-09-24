@@ -1,0 +1,46 @@
+﻿@model WebDay5.Models.EmployeeModel
+
+<h2>Chỉnh sửa nhân viên</h2>
+<form method="post" asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Họ tên:</label>
+        <input asp-for="FullName" />
+    </div>
+    <div>
+        <label>Giới tính:</label>
+        <input asp-for="Gender" />
+    </div>
+    <div>
+        <label>Số điện thoại:</label>
+        <input asp-for="Phone" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label>Lương:</label>
+        <input asp-for="Salary" />
+    </div>
+    <div>
+        <label>Trạng thái:</label>
+        <input type="checkbox" asp-for="Status" />
+    </div>
+    <button type="submit" class="btn">Lưu</button>
+</form>
+
+<style>
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        border-radius: 5px;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+</style>
