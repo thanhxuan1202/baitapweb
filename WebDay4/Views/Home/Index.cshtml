@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+@* <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Content Management</h3>
+            </div>
+            <div class="card-body">
+                <p>Welcome to the AdminLTE Content Management Dashboard!</p>
+            </div>
+        </div>
+    </div>
+</div> *@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>10%</h3>
+                        <p>CPU Traffic</p>
+                    </div>
+                    <div class="color-block" style="width: 50px; height: 50px; background-color: #17a2b8;"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-danger">
+                    <div class="inner">
+                        <h3>41,410</h3>
+                        <p>Likes</p>
+                    </div>
+                    <div class="color-block" style="width: 50px; height: 50px; background-color: #dc3545;"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3>150</h3>
+                        <p>Sales</p>
+                    </div>
+                    <div class="color-block" style="width: 50px; height: 50px; background-color: #28a745;"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>2,000</h3>
+                        <p>New Members</p>
+                    </div>
+                    <div class="color-block" style="width: 50px; height: 50px; background-color: #ffc107;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Monthly Recap Report</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart">
+                            <canvas id="monthlyRecapChart" style="height: 200px;"></canvas>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <p><i class="fas fa-arrow-up text-success"></i> +10%</p>
+                            </div>
+                            <div class="col-4">
+                                <p><i class="fas fa-arrow-up text-success"></i> +16%</p>
+                            </div>
+                            <div class="col-4">
+                                <p><i class="fas fa-arrow-down text-danger"></i> -1%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Goal Completion</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">Add Products to Cart</div>
+                            <div class="col-6">200/800</div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Complete Purchase</div>
+                            <div class="col-6">376/500</div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-danger" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Visit Premium Page</div>
+                            <div class="col-6">480/800</div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Send Inquiries</div>
+                            <div class="col-6">250/500</div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
