@@ -1,0 +1,16 @@
+﻿@* @page
+@model controller_route.Views.Product.IndexModel *@
+@{
+    ViewData["Title"] = "Danh Sách Sản Phẩm";
+}
+
+<div class="container">
+    <h1>Danh sách sản phẩm</h1>
+    <p>Đây là trang hiển thị danh sách sản phẩm.</p>
+    <ul>
+        <li><a asp-controller="Product" asp-action="Details" asp-route-id="1">Sản phẩm 1</a></li>
+        <li><a asp-controller="Product" asp-action="Details" asp-route-id="2">Sản phẩm 2</a></li>
+        <li><a asp-controller="Product" asp-action="Details" asp-route-id="3">Sản phẩm 3</a></li>
+    </ul>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Quay về Trang Chủ</a>
+</div>

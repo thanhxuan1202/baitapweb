@@ -1,0 +1,12 @@
+﻿@* @page
+@model controller_route.Views.Product.DetailsModel *@
+@{
+    ViewData["Title"] = ViewData["Title"];
+}
+
+<div class="container">
+    <h1>Chi tiết sản phẩm</h1>
+    <p>Chi tiết sản phẩm ID: @ViewData["ProductId"]</p>
+    <p>Đây là trang chi tiết sản phẩm mẫu</p>
+    <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Quay về danh sách sản phẩm</a>
+</div>
