@@ -1,0 +1,42 @@
+﻿@model IEnumerable<data.Models.KhachHang>
+
+<h2>Danh sách Khách Hàng</h2>
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Mã KH</th>
+            <th>Họ Tên</th>
+            <th>Email</th>
+            <th>SĐT</th>
+            <th>Địa chỉ</th>
+            <th>Ngày đăng ký</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.MaKhachHang</td>
+                <td>@item.HoTenKhachHang</td>
+                <td>@item.Email</td>
+                <td>@item.DienThoai</td>
+                <td>@item.DiaChi</td>
+                <td>@item.NgayDangKy?.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @if (item.TrangThai == 1)
+                    {
+                        <span>Hoạt động</span>
+                    }
+                    else
+                    {
+                        <span>Khóa</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
