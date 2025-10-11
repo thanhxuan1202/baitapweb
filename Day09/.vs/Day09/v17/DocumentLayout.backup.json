@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code\\ky5\\web\\Day09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|d:\\code\\ky5\\web\\day09\\migrations\\20251011162504_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|solutionrelative:migrations\\20251011162504_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|d:\\code\\ky5\\web\\day09\\models\\khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|solutionrelative:models\\khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|d:\\code\\ky5\\web\\day09\\models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|solutionrelative:models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|d:\\code\\ky5\\web\\day09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|d:\\code\\ky5\\web\\day09\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A7A29153-C18D-4AAA-8E9F-A76555438F40}|Day09.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 287,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251011162504_V1.cs",
+              "DocumentMoniker": "D:\\code\\ky5\\web\\Day09\\Migrations\\20251011162504_V1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251011162504_V1.cs",
+              "ToolTip": "D:\\code\\ky5\\web\\Day09\\Migrations\\20251011162504_V1.cs",
+              "RelativeToolTip": "Migrations\\20251011162504_V1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T16:25:06.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KhuyenMai.cs",
+              "DocumentMoniker": "D:\\code\\ky5\\web\\Day09\\Models\\KhuyenMai.cs",
+              "RelativeDocumentMoniker": "Models\\KhuyenMai.cs",
+              "ToolTip": "D:\\code\\ky5\\web\\Day09\\Models\\KhuyenMai.cs",
+              "RelativeToolTip": "Models\\KhuyenMai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:44:59.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\code\\ky5\\web\\Day09\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\code\\ky5\\web\\Day09\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:41:05.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\code\\ky5\\web\\Day09\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\code\\ky5\\web\\Day09\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-11T10:39:47.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QlbanHangContext.cs",
+              "DocumentMoniker": "D:\\code\\ky5\\web\\Day09\\Models\\QlbanHangContext.cs",
+              "RelativeDocumentMoniker": "Models\\QlbanHangContext.cs",
+              "ToolTip": "D:\\code\\ky5\\web\\Day09\\Models\\QlbanHangContext.cs",
+              "RelativeToolTip": "Models\\QlbanHangContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:39:01.373Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
