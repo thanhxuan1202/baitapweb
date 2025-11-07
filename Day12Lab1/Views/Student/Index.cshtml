@@ -2,10 +2,12 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Student List";
+    Layout = "~/Views/Shared/MyLayoutHelper.cshtml";
 }
 @model IEnumerable<Day12Lab1.Models.Student>
 
-<a asp-action="Create" asp-controller="Student" class="btn btn-primary">Create Student</a>
+@* <a asp-action="Create" asp-controller="Student" class="btn btn-primary">Create Student</a>
 <!-- Cách 1: HTML thuần -->
 <a href="/Admin/Student/Add" class="btn btn-primary">Create Student (HTML)</a>
 
@@ -13,8 +15,9 @@
 <a asp-action="Create" asp-controller="Student" class="btn btn-success">Create Student (asp-action)</a>
 
 @* <!-- Cách 3: Tag Helper theo route -->
-<a asp-route="Admin/Student/Add" class="btn btn-warning">Create Student (asp-route)</a> *@
+<a asp-route="Admin/Student/Add" class="btn btn-warning">Create Student (asp-route)</a>*@
 
+<a asp-action="Create" class="btn btn-primary">Create Student</a>
 <table class="table table-striped mt-3">
     <thead>
         <tr>
@@ -47,3 +50,8 @@
         }
     </tbody>
 </table>
+@section Scripts {
+    <script>
+        document.querySelector("table").style.backgroundColor = "yellow";
+    </script>
+}
