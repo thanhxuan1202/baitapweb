@@ -47,43 +47,56 @@ namespace Day12Lab1.Controllers
             return View();
         }
 
+        [HttpPost("Add")]
+        public IActionResult Create(Student s)
+        {
+            if (ModelState.IsValid)
+            {
+                s.Id = listStudents.Last().Id + 1;
+                listStudents.Add(s);
+                return View("Index", listStudents);
+            }
+            ViewBag.AllGenders = Enum.GetValues(typeof(Gender)).Cast<Gender>().ToList();
+
+            ViewBag.AllBranches = new List<SelectListItem>()
+            {
+                new SelectListItem { Text = "IT", Value = "1" },
+                new SelectListItem { Text = "BE", Value = "2" },
+                new SelectListItem { Text = "CE", Value = "3" },
+                new SelectListItem { Text = "EE", Value = "4" }
+            };
+            return View();
+        }
+
         //[HttpPost("Add")]
-        //public IActionResult Create(Student s)
+        //public IActionResult Create(Student s, IFormFile AvatarFile, [FromServices] IWebHostEnvironment env)
         //{
+        //    if (AvatarFile != null && AvatarFile.Length > 0)
+        //    {
+        //        // Tạo thư mục lưu ảnh nếu chưa có
+        //        string uploadPath = Path.Combine(env.WebRootPath, "images", "avatars");
+        //        if (!Directory.Exists(uploadPath))
+        //            Directory.CreateDirectory(uploadPath);
+
+        //        // Đặt tên file duy nhất (tránh trùng)
+        //        string fileName = $"{Guid.NewGuid()}_{AvatarFile.FileName}";
+        //        string filePath = Path.Combine(uploadPath, fileName);
+
+        //        // Lưu file ảnh vào thư mục wwwroot/images/avatars
+        //        using (var stream = new FileStream(filePath, FileMode.Create))
+        //        {
+        //            AvatarFile.CopyTo(stream);
+        //        }
+
+        //        // Lưu đường dẫn tương đối vào Student
+        //        s.Avatar = $"/images/avatars/{fileName}";
+        //    }
+
+        //    // Tăng ID và thêm vào danh sách
         //    s.Id = listStudents.Last().Id + 1;
         //    listStudents.Add(s);
-        //    return View("Index", listStudents);
+
+        //    return RedirectToAction("Index");
         //}
-
-        [HttpPost("Add")]
-        public IActionResult Create(Student s, IFormFile AvatarFile, [FromServices] IWebHostEnvironment env)
-        {
-            if (AvatarFile != null && AvatarFile.Length > 0)
-            {
-                // Tạo thư mục lưu ảnh nếu chưa có
-                string uploadPath = Path.Combine(env.WebRootPath, "images", "avatars");
-                if (!Directory.Exists(uploadPath))
-                    Directory.CreateDirectory(uploadPath);
-
-                // Đặt tên file duy nhất (tránh trùng)
-                string fileName = $"{Guid.NewGuid()}_{AvatarFile.FileName}";
-                string filePath = Path.Combine(uploadPath, fileName);
-
-                // Lưu file ảnh vào thư mục wwwroot/images/avatars
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    AvatarFile.CopyTo(stream);
-                }
-
-                // Lưu đường dẫn tương đối vào Student
-                s.Avatar = $"/images/avatars/{fileName}";
-            }
-
-            // Tăng ID và thêm vào danh sách
-            s.Id = listStudents.Last().Id + 1;
-            listStudents.Add(s);
-
-            return RedirectToAction("Index");
-        }
     }
 }

@@ -2,6 +2,7 @@ wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
 wwwroot\images\avatars\2d0619ac-d1b8-4330-9f10-a5c91f8edd17_z4572749481366_81fb246c05ec02eb03cb967e8a7bc7de.jpg
+wwwroot\images\avatars\8c1df904-51b9-4fff-869a-f4bd1abf9f49_IMG20230503055121.jpg
 wwwroot\images\avatars\b2d51d49-6bc6-4ef3-ba2f-3f9936d9c353_retouch_2023052913304256.jpg
 wwwroot\images\avatars\cffc3275-72ac-4180-ab20-e873d1d6af9d_retouch_2023052913330151.jpg
 wwwroot\js\scripts.js
